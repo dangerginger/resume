@@ -1,5 +1,5 @@
 \documentclass[letterpaper,11pt]{article}
-\usepackage[scale=0.9]{geometry}
+\usepackage[letterpaper, margin=0.5in]{geometry}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
@@ -12,8 +12,20 @@
 \setlength\parindent{0pt}
 \pagestyle{empty}
 
+\newmdenv[
+  topline=false,
+  bottomline=false,
+  rightline=false,
+  leftmargin=12pt,
+  innerrightmargin=0pt,
+  innerbottommargin=0pt,
+  innertopmargin=0em,
+  skipabove=\topsep,
+  skipbelow=\topsep
+]{leftrule}
+
 \begin{document}
-\begin{tabularx}{\linewidth}{@{}lYYr@{}}                                                                      \\
+\begin{tabularx}{\linewidth}{@{}lYYr@{}}
   \multicolumn{4}{c}{\textbf{\Huge{James Kavanaugh}}}                                           \\
   \vspace{-10px}                                                                       &   &  & \\
   \hline
@@ -42,63 +54,83 @@
   \item \textbf{Web socket framework}: Typescript and Node.js web socket framework with message schema validation to enable real-time synchronization of web applications and maintain data consistency.
   \item \textbf{Encrypted synthetic data research}: Python and C++ based research using homomorphic encryption and differential privacy to maintain privacy of sensitive datasets while generating synthetic data.
   \item \textbf{Computer vision application}: C++, OpenCV and Tensorflow models to monitor RTSP camera streams, with macOS and tvOS client applications to view home security camera and insights.
-  \item \textbf{Request for quote application}: Cloud-native AWS application written in Typescript, React, Next.js that uses AWS Amplify, DynamoDB to streamline requesting and comparing vendor quotes.
-  \item \textbf{Space Time}: Native iOS and watchOS application with AWS Amplify and GraphQL backend to help users visualize time linearly instead of as a cycle to create urgency. Memento mori.
+        %\item \textbf{Request for quote application}: Cloud-native AWS application written in Typescript, React, Next.js that uses AWS Amplify, DynamoDB to streamline requesting and comparing vendor quotes.
+        %\item \textbf{Space Time}: Native iOS and watchOS application with AWS Amplify and GraphQL backend to help users visualize time linearly instead of as a cycle to create urgency. Memento mori.
 \end{itemize}
 
 \vspace{-10px}
 \section*{Experience}
 \hrule
-\begin{tabularx}{\linewidth}{@{}m{4in}Xr}
-  \textbf{President and CEO (Owner)}                                              & North Slope Software                                  & 2022-2024                                                                          \\
-  \vspace{-10px}                                                                  & \vspace{-10px}                                        & \vspace{-10px}                                                                     \\
-  \multicolumn{3}{@{}m{\linewidth}}{%
-  \begin{itemize}[leftmargin=*,nosep]
-    \item Responsible for business development, user experience design, software engineering, security, and DevOps.
-    \item Designed and implemented a custom CRM application for a local marine construction company, which increased efficiency and reduced errors for the client saving \$50,000 over the product lifetime.
-    \item Developed a WebSockets framework for the browser and Node.js to synchronize web applications and facilitate real-time collaboration.
-    \item Deployed web applications to AWS using AWS Amplify, EC2, S3, Route53, and other services to decrease fixed costs and increase reliability.
-    \item Conducted business development to create partnerships with overseas software developers in India, Taiwan, and Brazil to extend North Slope Software's capabilities while cutting future development costs in half.
-    \item Initiated customer and product development for a cloud-based computer vision service augmented by edge devices using TensorFlow, AWS, Python, C++, Next.js, and DynamoDB to provide delegated awareness for IP cameras.
-  \end{itemize}} \\
-  \vspace{-20px}                                                                  & \vspace{-20px}                                        & \vspace{-20px}                                                                     \\
+\begin{tabularx}{\linewidth}{@{}m{4in}Xr@{}}
+  \textbf{President and CEO (Owner)} & North Slope Software & 2022-2024 \\
+\end{tabularx}
+\vspace{-1.5em}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Responsible for product development, software engineering, user experience design, security, and DevOps.
+  \item Designed and implemented a custom CRM application for a local marine construction company, which increased efficiency and reduced errors for the client saving \$50,000 over the product lifetime.
+  \item Developed a websocket framework for the browser and Node.js to synchronize web applications with the backend data store to facilitate real-time collaboration between application users.
+  \item Deployed web applications to AWS Amplify, EC2, S3, Route53, and other services to decrease fixed costs and increase reliability and scalability.
+  \item Conducted business development with overseas software developers in India and Brazil to extend North Slope Software's capabilities and cut future development costs in half.
+  \item Initiated customer and product development for a delegated awareness computer vision service for IP cameras using TensorFlow, AWS, Python, C++, Next.js, and DynamoDB.
+\end{itemize}
 
-  \textbf{``Green Beret'' Master Sergeant, U.S. Army}                             & 1\textsuperscript{st} Special Forces Group (Airborne) & 2004-2024                                                                          \\
-
-  \multicolumn{1}{@{}|l@{}}{\textbf{Indo-Pacific Regional Program Manager (18Z)}} & Washington and overseas                               & 2020-2024                                                                          \\
-  \multicolumn{3}{@{}|m{\linewidth}@{}}{%
-  \begin{itemize}[leftmargin=*,nosep]
-    \item Led a diverse multidisciplinary staff to manage joint special operations teams in seven Asian countries.
-    \item Responsible for all advanced special operations in the Indo-Pacific theater, including 182 missions, increasing successful operations by 200\% after COVID restrictions lightened.
-    \item Mentored and developed leaders and technicians on high-performing teams to achieve strategic objectives.
-    \item Responsible for written communication and briefings to synchronize operations with senior leaders' intent.
-  \end{itemize}}                                      \\
-  \vspace{-20px}                                                                  & \vspace{-20px}                                        & \vspace{-20px}                                                                     \\
-
-  \multicolumn{1}{@{}|l@{}}{\textbf{Operations Manager (18Z)}}                    & Washington and overseas                               & 2018-2020                                                                          \\
-  \multicolumn{3}{@{}|m{\linewidth}@{}}{%
-  \begin{itemize}[leftmargin=*,nosep]
-    \item Managed a high-performance, multifunctional, and highly specialized special forces detachment.
-    \item Responsible for training, mentorship, and professional development for a Special Forces operational detachment.
-  \end{itemize}}                                                                                                         \\
-  \vspace{-20px}                                                                  & \vspace{-20px}                                        & \vspace{-20px}                                                                     \\
-
-  \textbf{Assistant Operations Manager (18F)}                                     & Washington and overseas                               & 2012-2018                                                                          \\
-  \multicolumn{3}{m{\textwidth}@{}}{%
-  \begin{itemize}[leftmargin=*,nosep]
-    \item Responsible for data mining, analysis, and targeting to plan tactical operations for a Special Forces detachment.
-    \item Worked cooperatively with Iraqi, Philippine, Afghani, Korean, and Thai military partners on mutual goals.
-    \item Gained working proficiency in Mandarin Chinese during two language exchange trips to Shenyang, China.
-  \end{itemize}}
+\begin{tabularx}{\linewidth}{@{}m{4in}Xr@{}}
+  \textbf{Master Sergeant, Green Beret, U.S. Army} & 1\textsuperscript{st} Special Forces Group (Airborne) & 2004-2024 \\
 \end{tabularx}
 
-\vspace{-20px}
+\begin{leftrule}
+  \begin{tabularx}{\linewidth}{@{}m{3.67in}Xr@{}}
+    \textbf{Indo-Pacific Regional Program Manager (18Z)} & Washington and overseas & 2020-2024 \\
+  \end{tabularx}
+  \vspace{-1.75em}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Led a diverse multidisciplinary staff to manage joint special operations teams in seven Asian countries to counter regional adversaries and bolster American partnerships.
+    \item Responsible for all advanced special operations in the Indo-Pacific theater, including 182 missions that increased achievement of military objectives by 200\%.
+    \item Mentored and developed senior special operations leaders and technicians to achieve strategic effects and develop their careers.
+    \item Translated high-level, ambiguous strategic guidance into achievable tactical tasks and supervised executing teams to ensure operations led to strategic results.
+  \end{itemize}
+
+  \begin{tabularx}{\linewidth}{@{}m{3.67in}Xr@{}}
+    \textbf{Special Forces Team Sergeant (18Z)} & Washington and overseas & 2018-2020 \\
+  \end{tabularx}
+  \vspace{-1.75em}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Responsible for training, mentorship, and professional development of a high-performance and specialized Special Forces detachment.
+    \item Acted as liaison between Special Operations Command (SOCOM), U.S. Government agencies, and Korean partners for combined operations to mitigate threats from regional adversaries.
+  \end{itemize}
+
+  \begin{tabularx}{\linewidth}{@{}m{3.67in}Xr@{}}
+    \textbf{Special Forces Intelligence Sergeant (18F)} & Washington and overseas & 2012-2018 \\
+  \end{tabularx}
+  \vspace{-1.75em}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Responsible for analysis and planning to drive effective operations for a Special Forces detachment with limited guidance and resources in challenging environments.
+    \item Conducted two Chinese language immersion and cultural exchange programs in Shenyang, China at Shenyang University and Liaoning University, gaining a working proficiency in Mandarin Chinese.
+    \item Built trust and rapport with Iraqi, Philippine, Afghan, Korean, and Thai military partners to support combined operations on mutual goals.
+  \end{itemize}
+
+  \begin{tabularx}{\linewidth}{@{}m{3.67in}Xr@{}}
+    \textbf{Special Forces Medical Sergeant (18D)} & Washington and overseas & 2007-2011 \\
+  \end{tabularx}
+  \vspace{-1.75em}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Conducted 150 combat patrols as the first responder for a Special Forces detachment and as a trainer and advisor for an Iraqi partner force to decrease deadly attacks, secure Tikrit, Iraq, and protect coalition forces.
+    \item Sole medical provider running day-to-day operations for a clinic on the remote Jolo Island in the Philippines, providing medical and dental services by pulling teeth, treating infections, and more.
+          %\item	Treated a patient with substantial electrical burns for four months, earning the the trust and respect of our Iraqi military partner force.
+
+  \end{itemize}
+
+  \begin{tabularx}{\linewidth}{@{}m{3.67in}Xr@{}}
+    \textbf{Special Forces Recruit and Trainee (18X)} & Washington and overseas & 2004-2007 \\
+  \end{tabularx}
+\end{leftrule}
+
 \section*{Skills}
 \hrule
 \begin{tabularx}{\linewidth}{@{}YYYYY@{}}
-  Project Management & Communication & Agile Development & Strategic Planning & Machine Learning \\
-  C / C++            & Python        & Javascript        & Typescript         & Node.js          \\
-  React / Next.js    & AWS           & Postgres (SQL)    & MongoDB (NoSQL)    & Git              \\
+  Team Building   & Machine Learning & Strategic Planning & Communication   & Agile Development \\
+  C / C++         & Python           & Javascript         & Typescript      & Node.js           \\
+  React / Next.js & AWS              & Postgres (SQL)     & MongoDB (NoSQL) & Git               \\
 \end{tabularx}
 
 \vspace{-5px}
